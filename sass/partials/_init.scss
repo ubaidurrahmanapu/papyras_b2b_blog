@@ -1,0 +1,44 @@
+@import 'color';
+@import 'mixins';
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Gothic A1', sans-serif;
+}
+.heading {
+    font-family: 'Open Sans', sans-serif;
+}
+ul {
+    list-style-type: none;
+}
+
+.section_top_padding {
+    padding-top: 150px;
+}
+.follow_button {
+    border: 1px solid rgba($black, .1);
+    border-radius: 4px;
+    background: none;
+    color: $black;
+    outline: 0;
+    text-decoration: none !important;
+    &:focus {
+        box-shadow: none !important;
+    }
+    &:active {
+        border-color: rgba($black, .5) !important;
+        background-color: rgba($black, .5) !important;
+    }
+    &:hover {
+        background: none;
+        color: $black !important;
+        border: 1px solid rgba($black, .1);
+    }
+}
+.following {
+    background-color: rgba($black, .5);
+    color: $white;
+}
